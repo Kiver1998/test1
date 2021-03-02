@@ -19,7 +19,7 @@ markerhub:
     # token有效时长，7天，单位秒
     expire: 604800
     header: token
-  shiro:
+shiro:
     web:
       enabled: true
 
