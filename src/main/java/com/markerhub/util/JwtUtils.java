@@ -19,7 +19,7 @@ import java.util.Date;
 @Data
 @Component
 @PropertySource("classpath:application.yml")
-@ConfigurationProperties(prefix = "makerhub.jwt")
+@ConfigurationProperties(prefix = "markerhub.jwt")
 public class JwtUtils {
     private String secret;
     private long expire;

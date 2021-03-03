@@ -1,7 +1,7 @@
 package com.markerhub.config;
 
 import com.markerhub.shiro.AccountRealm;
-import com.markerhub.shiro.JwtFileter;
+import com.markerhub.shiro.JwtFilter;
 import org.apache.shiro.mgt.SessionsSecurityManager;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.mgt.SessionManager;
@@ -26,7 +26,7 @@ import java.util.Map;
 @Configuration
 public class ShiroConfig {
     @Autowired
-    JwtFileter jwtFilter;
+    JwtFilter jwtFilter;
     @Bean
     public SessionManager sessionManager(RedisSessionDAO redisSessionDAO) {
         DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
