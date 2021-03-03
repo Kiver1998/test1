@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * @author yan
+ */
 @Configuration
 @EnableTransactionManagement
 @MapperScan("com.markerhub.mapper")

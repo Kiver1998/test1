@@ -38,7 +38,7 @@ public class JwtFileter extends AuthenticatingFilter {
 
     @Override
     protected boolean onAccessDenied(ServletRequest servletRequest, ServletResponse servletResponse) throws Exception {
-        HttpServerRequest request =(HttpServerRequest) servletRequest;
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
         String jwt =request.getHeader("Authorization");
         if(StringUtils.isEmpty(jwt)){
             return true;
